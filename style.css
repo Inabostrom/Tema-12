@@ -9,12 +9,19 @@ body {
   font-family: "Avenir", Helvetica, sans-serif;
   font-size: 20px;
   line-height: 1.5rem;
+  /*background-color: var(--clr-primary-800);*/
 }
 
 :root {
   --pale: hsl(60, 93%, 84%);
   --dark: hsl(60, 93%, 14%);
+
+  /*--clr-primary-400: hsl(224, 58%, 40%);
+  --clr-primary-600: hsl(224, 58%, 60%);
+  --clr-primary-800: hsl(224, 58%, 80%);
+--clr-primary-100: hsl(224, 58%, 51%);*/
 }
+
 
 h1 {
   line-height: 2.5rem;
@@ -22,6 +29,11 @@ h1 {
 
 h2 {
   line-height: 2rem;
+}
+
+.section-01-header{
+    background-image: url(https://via.placeholder.com/500x400.png);
+
 }
 
  img{
@@ -74,6 +86,7 @@ section {
     .reverse{
       flex-direction: row-reverse;
     }
+
   }
 
 
