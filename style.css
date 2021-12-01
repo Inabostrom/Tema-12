@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* TEST UPDATE FOR MERGE */
+
 html,
 body {
   font-family: "Avenir", Helvetica, sans-serif;
@@ -15,13 +17,13 @@ body {
 :root {
   --pale: hsl(60, 93%, 84%);
   --dark: hsl(60, 93%, 14%);
+  --white: #000000;
 
   /*--clr-primary-400: hsl(224, 58%, 40%);
   --clr-primary-600: hsl(224, 58%, 60%);
   --clr-primary-800: hsl(224, 58%, 80%);
 --clr-primary-100: hsl(224, 58%, 51%);*/
 }
-
 
 h1 {
   line-height: 2.5rem;
@@ -31,16 +33,14 @@ h2 {
   line-height: 2rem;
 }
 
-.section-01-header{
-    background-image: url(https://via.placeholder.com/500x400.png);
-
+.section-01-header {
+  background-image: url(https://via.placeholder.com/500x400.png);
 }
 
- img{
-    width: 100%;
-/*height: 30rem;*/
-object-fit: cover;
-}  
+img {
+  width: 100%;
+  object-fit: cover;
+}
 
 /*mobil versjon-display block*/
 
@@ -50,13 +50,16 @@ main {
 }
 
 section {
-    min-height: 90vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
-
+.section-06-footer {
+  background-color: var(--dark);
+  color: var(--pale);
+}
 
 .max-width {
   width: 90%;
@@ -65,28 +68,25 @@ section {
   padding: 1rem;
 }
 
-
 .section-06-footer {
     background-color: var(--dark);
     color: var(--pale);
 }
 
+
 /* desktop versjon- display grid*/
 
 @media screen and (min-width: 600px) {
-    .section-02-rules-of-the-game{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 3rem;
-        margin-bottom: 4rem;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .reverse{
-      flex-direction: row-reverse;
-    }
-
+  .section-02-rules-of-the-game {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: row;
   }
 
-
+  .reverse {
+    flex-direction: row-reverse;
+  }
+}
