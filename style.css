@@ -19,18 +19,18 @@ h2 {
   line-height: 2rem;
 }
 
-img{
+ img{
     width: 100%;
+/*height: 30rem;*/
 object-fit: cover;
-}   
+}  
 
 /*mobil versjon-display block*/
 
 main {
   background-color: hsl(60, 93%, 84%);
   color: hsl(60, 93%, 14%);
- }
-
+}
 
 section {
     min-height: 90vh;
@@ -55,7 +55,7 @@ section {
     .section-02-rules-of-the-game{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 3rem;
+        column-gap: 4rem;
         margin-bottom: 4rem;
         display: flex;
         flex-direction: row;
