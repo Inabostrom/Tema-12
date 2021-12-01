@@ -11,6 +11,11 @@ body {
   line-height: 1.5rem;
 }
 
+:root {
+  --pale: hsl(60, 93%, 84%);
+  --dark: hsl(60, 93%, 14%);
+}
+
 h1 {
   line-height: 2.5rem;
 }
@@ -28,8 +33,8 @@ object-fit: cover;
 /*mobil versjon-display block*/
 
 main {
-  background-color: hsl(60, 93%, 84%);
-  color: hsl(60, 93%, 14%);
+  background-color: var(--pale);
+  color: var(--dark);
 }
 
 section {
@@ -48,6 +53,11 @@ section {
   padding: 1rem;
 }
 
+
+.section-06-footer {
+    background-color: var(--dark);
+    color: var(--pale);
+}
 
 /* desktop versjon- display grid*/
 
