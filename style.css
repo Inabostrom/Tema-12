@@ -4,7 +4,10 @@
   box-sizing: border-box;
 }
 
-
+:root {
+  --light: hsl(60, 93%, 84%);
+  --dark: hsl(60, 93%, 14%); 
+}
 
 html,
 body {
@@ -29,8 +32,8 @@ object-fit: cover;
 /*mobil versjon-display block*/
 
 main {
-  background-color: hsl(60, 93%, 84%);
-  color: hsl(60, 93%, 14%);
+  background-color: var(--light);
+  color: var(--dark);
 }
 
 section {
