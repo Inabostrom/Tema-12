@@ -60,11 +60,6 @@ section {
   flex-direction: column;
 }
 
-.section-06-footer {
-  background-color: var(--dark);
-  color: var(--pale);
-}
-
 .max-width {
   width: 90%;
   max-width: 40rem;
@@ -75,6 +70,46 @@ section {
 .section-06-footer {
     background-color: var(--dark);
     color: var(--pale);
+}
+
+.collapsible {
+  align-self: center;
+  width: 60%;
+  height: 80px;
+  background: hsl(38, 97%, 60%) url(images/Component_1.png);
+  background-repeat: no-repeat;
+  background-position: 90%, 40%;
+  margin: 5%;
+  border: none;
+  border-radius: 12px;
+}
+
+.colllapsible h3 {
+  color: inherit;
+  font-size: inherit;
+}
+
+.active,
+.collapsible:hover {
+  background-color: hsl(38, 97%, 50%);
+}
+
+.content {
+  width: 60%;
+  /* Ina, sett det du vil her! */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.content ul a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+.content ul a:hover {
+  color: hsl(38, 97%, 50%);
 }
 
 
