@@ -14,6 +14,10 @@ body {
   /*background-color: var(--clr-primary-800);*/
 }
 
+.line-height-top{
+  margin-top: 1rem; /*margin-bottom: 3rem;*/
+}
+
 :root {
   --pale: hsl(60, 93%, 84%);
   --dark: hsl(60, 93%, 14%);
@@ -52,7 +56,7 @@ main {
 section {
   min-height: 90vh;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
 }
 
@@ -81,7 +85,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 3rem;
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
     display: flex;
     flex-direction: row;
   }
