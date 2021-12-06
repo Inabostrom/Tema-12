@@ -8,25 +8,48 @@
 
 html,
 body {
-  font-family: "Avenir", Helvetica, sans-serif;
   font-size: 20px;
   line-height: 1.5rem;
-  /*background-color: var(--clr-primary-800);*/
 }
 
-.line-height-top{
+.line-height-top {
   margin-top: 1rem; /*margin-bottom: 3rem;*/
 }
 
 :root {
+  /* --pas: hsl(36,100,58);
   --pale: hsl(60, 93%, 84%);
   --dark: hsl(60, 93%, 14%);
-  --white: #000000;
+  --white: #000000; */
 
-  /*--clr-primary-400: hsl(224, 58%, 40%);
+  /*testet ut litt farger */ /*--clr-primary-400: hsl(224, 58%, 40%);
   --clr-primary-600: hsl(224, 58%, 60%);
   --clr-primary-800: hsl(224, 58%, 80%);
---clr-primary-100: hsl(224, 58%, 51%);*/
+  --clr-primary-100: hsl(224, 70%, 50%);
+--clr-primary-100: rgb(1, 2, 3);*/
+
+  /*blue 100% */
+
+  --clr-primary-100: hsl(223, 54, 33);
+
+  --green: hsl(143, 18%, 82%);
+  --orange: hsl(36, 73%, 77%);
+  --darkgreen: hsl(184, 37%, 16%);
+  --lightgreen: hsl(98, 87%, 88%);
+  --darkgreenhover: hsl(183, 37%, 16%, 30%);
+}
+
+.green {
+  background-color: var(--green);
+}
+
+.orange {
+  background-color: var(--orange);
+}
+
+.darkgreen-lightgreen {
+  background-color: var(--darkgreen);
+  color: var(--lightgreen);
 }
 
 h1 {
@@ -34,7 +57,7 @@ h1 {
 }
 
 h2 {
- line-height: 2rem; 
+  line-height: 2rem;
 }
 
 /*.section-01-header {
@@ -42,43 +65,52 @@ h2 {
 } */
 
 img {
-  width: 100%;
+  height: 13rem;
   object-fit: cover;
 }
 
 /*mobil versjon-display block*/
 
-main {
+/*main {
   background-color: var(--pale);
-  color: var(--dark);
-}
+  color: var(--dark); 
+}*/
 
 section {
-  /* min-height: 90vh; */
-  display: flex;
-  /* justify-content: center; */
-  flex-direction: column;
-  margin-bottom: 4rem;
-
+  min-height: 70vh;
 }
-
-.max-width {
-  width: 90%;
+.section-container {
   max-width: 40rem;
   margin: auto;
+  min-height: 70vh;
+  justify-content: center;
   padding: 1rem;
 }
 
+.footer-container {
+  max-width: 40rem;
+  margin: auto;
+  justify-content: left;
+  padding: 1rem;
+}
+
+.max-width {
+  max-width: 40rem;
+  margin: auto;
+}
+
 .section-06-footer {
-    background-color: var(--dark);
-    color: var(--pale);
+  background-color: var(--darkgreen);
+  color: var(--lightgreen);
 }
 
 .collapsible {
   align-self: center;
   width: 60%;
   height: 80px;
-  background: hsl(38, 97%, 60%) url(images/Component_1.png);
+  background: var(--darkgreen) url(images/Component_1.png);
+  color: var(--lightgreen);
+  /* background: hsl(38, 97%, 60%) url(images/Component_1.png); */
   background-repeat: no-repeat;
   background-position: 90%, 40%;
   margin: 5%;
@@ -93,7 +125,8 @@ section {
 
 .active,
 .collapsible:hover {
-  background-color: hsl(38, 97%, 50%);
+  /* background-color: hsl(38, 97%, 50%); */
+  background-color: var(--darkgreenhover);
 }
 
 .content {
@@ -111,23 +144,60 @@ section {
 }
 
 .content ul a:hover {
-  color: hsl(38, 97%, 50%);
+  /* color: hsl(38, 97%, 50%); */
+  color: var(--green);
 }
 
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+ul{
+  margin-left: 1rem;
+}
+.text-container-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  margin: 1rem;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
 
 /* desktop versjon- display grid*/
 
 @media screen and (min-width: 600px) {
-  .section-02-rules-of-the-game {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3rem;
-    /* margin-bottom: 4rem; */
+
+  .section-container {
     display: flex;
-    flex-direction: row;
+    column-gap: 2rem;
+  }
+  .footer-container {
+    display: flex;
+    column-gap: 6rem;
   }
 
+  .section-no-flex{
+      display: block;  
+  }
   .reverse {
     flex-direction: row-reverse;
   }
+
+  .text-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+
 }
