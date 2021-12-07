@@ -12,6 +12,7 @@ body {
   line-height: 1.5rem;
 }
 
+
 .line-height-top {
   margin-top: 1rem; /*margin-bottom: 3rem;*/
 }
@@ -28,12 +29,37 @@ body {
   --clr-primary-100: hsl(224, 70%, 50%);
 --clr-primary-100: rgb(1, 2, 3);*/
 
-  --green: hsl(143, 18%, 82%);
-  --orange: hsl(36, 73%, 77%);
+  --green: hsl(144, 34%, 63%);
+  --orange: hsl(37, 100%, 72%);
   --darkgreen: hsl(184, 37%, 16%);
   --lightgreen: hsl(98, 87%, 88%);
-  --darkgreenhover: hsl(183, 37%, 16%, 30%);
+  --darkgreenhover: hsl(183, 37%, 16%);
 }
+
+
+ul.topnav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--darkgreen);
+}
+ul.topnav li {float: none;}
+ul.topnav li.left {float: none;}
+
+ul.topnav li a {
+  display: block;
+  color: var(--lightgreen);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color:hsl(183, 37%, 12%);}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+
 
 .green {
   background-color: var(--green);
@@ -76,6 +102,13 @@ img {
   background-color: var(--pale);
   color: var(--dark); 
 }*/
+img.game-board {
+  box-shadow: 1px 4px 5px #264081;
+
+}
+/*
+box-shadow: 1px 4px 5px #264081;
+*/
 
 section {
   min-height: 70vh;
@@ -212,6 +245,20 @@ ul {
 /* desktop versjon- display grid*/
 
 @media screen and (min-width: 600px) {
+
+  ul.topnav li {float: right;}
+  ul.topnav li.left {float: left;}
+
+  ul.topnav li a.link-pos {
+    padding-top: 1.7rem;
+  }
+  
+
+  nav {
+  max-height: 4rem;
+}
+  
+  
   .text-container {
     margin: 1rem;
   }
