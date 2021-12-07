@@ -7,6 +7,12 @@
 
 /* Futura PT Bold */
 
+.button-text {
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 h3 {
   font-family: futura-pt-bold, sans-serif;
   font-weight: 700;

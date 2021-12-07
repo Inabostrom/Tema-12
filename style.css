@@ -28,9 +28,7 @@ body {
   --clr-primary-100: hsl(224, 70%, 50%);
 --clr-primary-100: rgb(1, 2, 3);*/
 
-  /*blue 100% */
-
-  --clr-primary-100: hsl(223, 54, 33);
+  
 
   --green: hsl(143, 18%, 82%);
   --orange: hsl(36, 73%, 77%);
@@ -58,6 +56,12 @@ h1 {
 
 h2 {
   line-height: 2rem;
+  color: var(--darkgreen);
+
+}
+
+button{
+  font-size: 1.4rem;
 }
 
 /*.section-01-header {
@@ -97,6 +101,10 @@ section {
 .max-width {
   max-width: 40rem;
   margin: auto;
+}
+
+.singel-container-max-width{
+  max-width: 25rem;
 }
 
 .section-06-footer {
@@ -171,6 +179,19 @@ ul{
   align-items: center;
   justify-content: center;
   margin: 1rem;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: [first] 80% [col2] auto [end];
+}
+.button-item1 {
+  grid-column-start: 1;
+  grid-column-end: span col2;
+}
+.button-item2 {
+  grid-column-start: 2;
+  grid-column-end: span;
 }
 
 /* desktop versjon- display grid*/
