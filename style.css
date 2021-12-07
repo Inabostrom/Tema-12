@@ -28,8 +28,6 @@ body {
   --clr-primary-100: hsl(224, 70%, 50%);
 --clr-primary-100: rgb(1, 2, 3);*/
 
-  
-
   --green: hsl(143, 18%, 82%);
   --orange: hsl(36, 73%, 77%);
   --darkgreen: hsl(184, 37%, 16%);
@@ -57,10 +55,9 @@ h1 {
 h2 {
   line-height: 2rem;
   color: var(--darkgreen);
-
 }
 
-button{
+button {
   font-size: 1.4rem;
 }
 
@@ -92,10 +89,11 @@ section {
 }
 
 .footer-container {
-  max-width: 40rem;
+   max-width: 40rem; 
   margin: auto;
-  justify-content: left;
+justify-content: left;
   padding: 1rem;
+
 }
 
 .max-width {
@@ -103,7 +101,7 @@ section {
   margin: auto;
 }
 
-.singel-container-max-width{
+.singel-container-max-width {
   max-width: 25rem;
 }
 
@@ -114,17 +112,30 @@ section {
 
 .collapsible {
   align-self: center;
-  width: 60%;
+  width: 100%;
   height: 80px;
   background: var(--darkgreen) url(images/Component_1.png);
   color: var(--lightgreen);
-  /* background: hsl(38, 97%, 60%) url(images/Component_1.png); */
   background-repeat: no-repeat;
   background-position: 90%, 40%;
   margin: 5%;
   border: none;
   border-radius: 12px;
+  font-size: 20px;
 }
+
+/* .collapsible {
+  align-self: center;
+  width: 60%;
+  height: 80px;
+  background: var(--darkgreen) url(images/Component_1.png);
+  color: var(--lightgreen);
+  background-repeat: no-repeat;
+  background-position: 90%, 40%;
+  margin: 5%;
+  border: none;
+  border-radius: 12px;
+} */
 
 .colllapsible h3 {
   color: inherit;
@@ -162,7 +173,7 @@ section {
   justify-content: center;
   margin: 2rem;
 }
-ul{
+ul {
   margin-left: 1rem;
 }
 .text-container-left {
@@ -178,7 +189,7 @@ ul{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
+  /* margin: 1rem; */
 }
 
 .button-grid {
@@ -194,9 +205,16 @@ ul{
   grid-column-end: span;
 }
 
+.line-heigt {
+  margin-bottom: 2rem;
+}
+
 /* desktop versjon- display grid*/
 
 @media screen and (min-width: 600px) {
+  .text-container {
+    margin: 1rem;
+  }
 
   .section-container {
     display: flex;
@@ -204,11 +222,12 @@ ul{
   }
   .footer-container {
     display: flex;
-    column-gap: 6rem;
+    max-width: 29rem;
+    column-gap: 3rem; 
   }
 
-  .section-no-flex{
-      display: block;  
+  .section-no-flex {
+    display: block;
   }
   .reverse {
     flex-direction: row-reverse;
@@ -220,5 +239,18 @@ ul{
     align-items: center;
   }
 
+  .collapsible {
+    align-self: center;
+    width: 60%;
+    height: 80px;
+    background: var(--darkgreen) url(images/Component_1.png);
+    color: var(--lightgreen);
+    background-repeat: no-repeat;
+    background-position: 90%, 40%;
+    margin: 5%;
+    border: none;
+    border-radius: 12px;
+  }
 
+  
 }
