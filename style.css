@@ -9,7 +9,8 @@
 html,
 body {
   font-size: 20px;
-  line-height: 1.5rem;
+  line-height: 1.5rem; 
+ 
 }
 
 
@@ -260,6 +261,11 @@ ul {
   max-height: 4rem;
 }
   
+html,
+body {
+  line-height: 1.4rem;
+}
+
 h3 {
   line-height: 4rem;
 } 
