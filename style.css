@@ -251,14 +251,18 @@ ul {
 
   ul.topnav li {float: right;}
   ul.topnav li.left {float: left;}
-
-  ul.topnav li a.link-pos {
-    padding-top: 1.7rem;
+  ul.topnav img {
+    height: 5rem;
+    margin-left: 2rem;
   }
-  
+  ul.topnav li a.link-pos {
+    padding-top: 4.7rem;
+  }
+  ul.topnav li.left a.active {background-color: hsl(183, 37%, 12%);}
+  ul.topnav li.left a:hover:not(.active) {background-color:hsl(183, 37%, 12%);}
 
   nav {
-  max-height: 4rem;
+  max-height: 7rem;
 }
   
 html,
