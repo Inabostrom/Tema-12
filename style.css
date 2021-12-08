@@ -83,9 +83,7 @@ h2 {
   color: var(--darkgreen);
 }
 
- h3 {
-  line-height: 2rem;
-} 
+
 
 button {
   font-size: 1.4rem;
@@ -262,6 +260,9 @@ ul {
   max-height: 4rem;
 }
   
+h3 {
+  line-height: 2rem;
+} 
   
   .text-container {
     margin: 1rem;
