@@ -112,7 +112,7 @@ justify-content: left;
   align-self: center;
   width: 100%;
   height: 80px;
-  background: var(--darkgreen) url(images/Component_1.png);
+  background: var(--darkgreen);
   color: var(--lightgreen);
   background-repeat: no-repeat;
   background-position: 90%, 40%;
@@ -244,14 +244,12 @@ h3 {
     align-self: center;
     width: 60%;
     height: 80px;
-    background: var(--darkgreen) url(images/Component_1.png);
+    background: var(--darkgreen);
     color: var(--lightgreen);
     background-repeat: no-repeat;
     background-position: 90%, 40%;
     margin: 5%;
     border: none;
     border-radius: 12px;
-  }
-
-  
+  }  
 }
