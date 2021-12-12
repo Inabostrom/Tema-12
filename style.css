@@ -171,15 +171,13 @@ ul {
 
 .button-grid {
   display: grid;
-  grid-template-columns: [first] 80% [col2] auto [end];
+  grid-template-columns: 80% 20%;
 }
 .button-item1 {
   grid-column-start: 1;
-  grid-column-end: span col2;
 }
 .button-item2 {
   grid-column-start: 2;
-  grid-column-end: span;
 }
 
 .line-heigt {
