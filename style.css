@@ -4,8 +4,6 @@
   box-sizing: border-box;
 }
 
-/* TEST UPDATE FOR MERGE */
-
 html,
 body {
   font-size: 20px;
@@ -15,21 +13,10 @@ body {
 
 
 .line-height-top {
-  margin-top: 1rem; /*margin-bottom: 3rem;*/
+  margin-top: 1rem; 
 }
 
 :root {
-  /* --pas: hsl(36,100,58);
-  --pale: hsl(60, 93%, 84%);
-  --dark: hsl(60, 93%, 14%);
-  --white: #000000; */
-
-  /*testet ut litt farger */ /*--clr-primary-400: hsl(224, 58%, 40%);
-  --clr-primary-600: hsl(224, 58%, 60%);
-  --clr-primary-800: hsl(224, 58%, 80%);
-  --clr-primary-100: hsl(224, 70%, 50%);
---clr-primary-100: rgb(1, 2, 3);*/
-
   --green: hsl(144, 34%, 63%);
   --orange: hsl(37, 100%, 72%);
   --darkgreen: hsl(184, 37%, 16%);
@@ -60,8 +47,6 @@ ul.topnav li a:hover:not(.active) {background-color:hsl(183, 37%, 12%);}
 
 ul.topnav li a.active {background-color: #04AA6D;}
 
-
-
 .green {
   background-color: var(--green);
 }
@@ -84,34 +69,19 @@ h2 {
   color: var(--darkgreen);
 }
 
-
-
 button {
   font-size: 1.4rem;
 }
-
-/*.section-01-header {
-  background-image: url(https://via.placeholder.com/500x400.png);
-} */
 
 img {
   height: 13rem;
   object-fit: cover;
 }
 
-/*mobil versjon-display block*/
-
-/*main {
-  background-color: var(--pale);
-  color: var(--dark); 
-}*/
 img.game-board {
   box-shadow: 1px 4px 5px #264081;
 
 }
-/*
-box-shadow: 1px 4px 5px #264081;
-*/
 
 section {
   min-height: 70vh;
@@ -160,19 +130,6 @@ justify-content: left;
   font-size: 20px;
 }
 
-/* .collapsible {
-  align-self: center;
-  width: 60%;
-  height: 80px;
-  background: var(--darkgreen) url(images/Component_1.png);
-  color: var(--lightgreen);
-  background-repeat: no-repeat;
-  background-position: 90%, 40%;
-  margin: 5%;
-  border: none;
-  border-radius: 12px;
-} */
-
 .colllapsible h3 {
   color: inherit;
   font-size: inherit;
@@ -180,13 +137,11 @@ justify-content: left;
 
 .active,
 .collapsible:hover {
-  /* background-color: hsl(38, 97%, 50%); */
   background-color: var(--darkgreenhover);
 }
 
 .content {
   width: 60%;
-  /* Ina, sett det du vil her! */
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -225,7 +180,6 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* margin: 1rem; */
 }
 
 .button-grid {
