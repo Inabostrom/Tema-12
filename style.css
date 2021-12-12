@@ -60,10 +60,6 @@ ul.topnav li a.active {background-color: #04AA6D;}
   color: var(--lightgreen);
 }
 
-h1 {
-  line-height: 2.5rem;
-}
-
 h2 {
   line-height: 2rem;
   color: var(--darkgreen);
@@ -111,10 +107,6 @@ justify-content: left;
   max-width: 25rem;
 }
 
-.section-06-footer {
-  background-color: var(--darkgreen);
-  color: var(--lightgreen);
-}
 
 .collapsible {
   align-self: center;
@@ -128,11 +120,6 @@ justify-content: left;
   border: none;
   border-radius: 12px;
   font-size: 20px;
-}
-
-.colllapsible h3 {
-  color: inherit;
-  font-size: inherit;
 }
 
 .active,
